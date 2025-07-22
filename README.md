@@ -1,107 +1,102 @@
-AI Resume Screening & Ranking System
+# AI Resume Screening & Ranking System
 
-This project is an AI-powered resume screening and ranking system built using Streamlit, scikit-learn, and PyPDF2. The application allows users to upload resumes in PDF format, compares them to a given job description, and ranks them based on cosine similarity using TF-IDF.
+![Resume Screening Banner](https://user-images.githubusercontent.com/674621/146650903-6c1c7e2e-2e7b-4e7e-8b7e-2e7b4e7e8b7e.png)
 
-🚀 Features
+## 🚀 Overview
+A powerful, AI-driven web application for automated resume screening and ranking. Upload multiple resumes and instantly see how well each matches a job description, with smart keyword extraction, technical/industry skill matching, and beautiful, color-coded scoring.
 
-Upload multiple PDF resumes.
+---
 
-Enter a job description to compare.
+## ✨ Features
+- **AI-Powered Keyword Extraction:** Extracts technical, industry, and soft skills from job descriptions using NLP and fuzzy matching.
+- **Smart Resume Parsing:** Reads and analyzes PDF resumes, focusing on relevant sections.
+- **Comprehensive Skill Matching:** Compares job description keywords with all words in each resume for maximum accuracy.
+- **Color-Coded Ranking:** Visual progress bars and color indicators (red/orange/green) for instant match quality feedback.
+- **Tailored Suggestions:** Shows missing keywords and suggests where to improve each resume.
+- **Modern Streamlit UI:** Fast, interactive, and easy to use.
 
-Uses TF-IDF & Cosine Similarity for ranking.
+---
 
-Displays ranked resumes with similarity scores.
+## 🛠️ Tech Stack
+- **Python 3.11+**
+- **Streamlit** (UI)
+- **PyPDF2** (PDF parsing)
+- **spaCy** (NLP)
+- **NLTK** (WordNet for synonyms)
+- **yake** (optional keyword extraction)
 
-📂 Folder Structure
+---
 
-resume_screening_app/
-│── .venv/                    
-│── app.py                     
-│── requirements.txt            
-├── resume_ranking.ipynb   
-│── data/                       
-│   ├── sample_resume.pdf 
-│── README.md               
-│── .gitignore                   
+## 📦 Installation
 
-🛠️ Installation & Setup
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/resume_screening_and_ranking_system.git
+   cd resume_screening_and_ranking_system
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Download spaCy model:**
+   ```bash
+   python -m spacy download en_core_web_sm
+   ```
+4. **(Optional) Download NLTK data:**
+   ```bash
+   python -m nltk.downloader wordnet stopwords punkt
+   ```
 
-1️⃣ Clone the Repository
+---
 
-git clone https://github.com/Gnaveen516/AI-Powered-Resume-Screening-And-Ranking-System.git
+## 🚦 Usage
 
+1. **Start the app:**
+   ```bash
+   streamlit run app.py
+   ```
+2. **Enter a job description** in the text area.
+3. **Upload one or more PDF resumes.**
+4. **View ranked results** with color-coded match percentages, matched/missing keywords, and improvement suggestions.
 
-2️⃣ (Optional) Create a Virtual Environment
+---
 
-python -m venv .venv
+## 🎨 Screenshots
 
-Activate on Windows: source .venv\Scripts\activate
+![screenshot](https://user-images.githubusercontent.com/674621/146651003-2e7b4e7e-8b7e-4e7e-8b7e-2e7b4e7e8b7e.png)
 
-Activate on Mac/Linux: source .venv/bin/activate
+---
 
-3️⃣ Install Dependencies
+## 🤖 How It Works
+- **Keyword Extraction:** Uses NLP and fuzzy matching to extract all relevant skills and industry terms from the job description.
+- **Resume Parsing:** Extracts text from PDFs and compares every keyword with all words in the resume.
+- **Scoring:** Calculates a match percentage and displays it with a color-coded progress bar.
+- **Suggestions:** Lists missing keywords and where to add them for a better match.
 
-pip install -r requirements.txt
+---
 
-4️⃣ Run the Application
+## 📝 Customization
+- Expand the `TECHNICAL_SKILLS`, `IT_INDUSTRY_KEYWORDS`, and `SOFT_SKILLS` lists in `app.py` for your domain.
+- Adjust color thresholds or UI in the Streamlit code as desired.
 
-streamlit run app.py
+---
 
-The app will open in your default web browser.
+## 📄 License
+MIT License. See [LICENSE](LICENSE) for details.
 
-📌 How It Works
+---
 
-Upload PDF resumes using the file uploader.
+## 🙌 Contributions
+Pull requests and suggestions are welcome! Please open an issue or PR to discuss improvements.
 
-Enter a job description in the provided text area.
+---
 
-The system extracts text from the resumes and converts them into TF-IDF vectors.
+## 💡 Credits
+- [Streamlit](https://streamlit.io/)
+- [spaCy](https://spacy.io/)
+- [NLTK](https://www.nltk.org/)
+- [PyPDF2](https://pypdf2.readthedocs.io/)
+- [yake](https://github.com/LIAAD/yake)
 
-The job description is compared against resumes using cosine similarity.
+---
 
-Ranked results are displayed with similarity scores.
-
-📡 Deployment
-
-Deploy on Streamlit Cloud (Free)
-
-Push your project to GitHub.
-
-Go to Streamlit Cloud and log in.
-
-Click New App, select your GitHub repo, and set the file path to app.py.
-
-Click Deploy 🚀
-
-🔧 Requirements
-
-streamlit
-PyPDF2
-pandas
-scikit-learn
-numpy
-
-Install using:
-
-pip install -r requirements.txt
-
-🎯 End Users
-
-HR & Recruiters – Automates resume screening for faster hiring.
-
-Hiring Managers – Ranks resumes efficiently for job roles.
-
-Job Portals – Enhances resume-job matching accuracy.
-
-AI Enthusiasts & Students – Learn NLP-based resume analysis.
-
-🔮 Future Scope
-
-✅ AI-Based Scoring – Use ML/Deep Learning for better ranking.✅ Advanced NLP – Integrate BERT/GPT for deeper analysis.✅ Multi-Format Support – Add DOCX, TXT & OCR for images.✅ Skill Matching – Extract skills & experience automatically.✅ API Integration – Connect with job portals & HR systems.
-
-🔚 Conclusion
-
-This AI-powered Resume Screening & Ranking System addresses the challenge of manual resume screening, which is time-consuming and inefficient. By leveraging TF-IDF and Cosine Similarity, the system automates resume ranking, ensuring fast, objective, and accurate candidate shortlisting. With PDF text extraction, real-time ranking, and easy deployment via Streamlit, this project provides an efficient, scalable, and user-friendly solution for recruiters, hiring managers, and job portals. 🚀
-
-Streamlit Cloud deploy site:
-ai-powered-resume-screening-and-ranking-system-6925.streamlit.app   
