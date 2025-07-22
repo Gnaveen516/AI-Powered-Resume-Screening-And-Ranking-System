@@ -1,6 +1,6 @@
 # AI Resume Screening & Ranking System
 
-![Resume Screening Banner](https://user-images.githubusercontent.com/674621/146650903-6c1c7e2e-2e7b-4e7e-8b7e-2e7b4e7e8b7e.png)
+![Resume Screening Banner](https://media.istockphoto.com/id/157307281/photo/magnifying-glass-on-resume.jpg?s=612x612&w=0&k=20&c=4GOxsmLgRc-TkdGTp3sSUwo-JronCIXg0Doj5P8Jwxw=)
 
 ## 🚀 Overview
 A powerful, AI-driven web application for automated resume screening and ranking. Upload multiple resumes and instantly see how well each matches a job description, with smart keyword extraction, technical/industry skill matching, and beautiful, color-coded scoring.
