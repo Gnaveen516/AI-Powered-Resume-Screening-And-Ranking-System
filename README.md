@@ -63,7 +63,8 @@ A powerful, AI-driven web application for automated resume screening and ranking
 
 ## 🎨 Screenshots
 
-![screenshot](https://user-images.githubusercontent.com/674621/146651003-2e7b4e7e-8b7e-4e7e-8b7e-2e7b4e7e8b7e.png)
+![screenshot1](Demo_Picture_1.png)
+![screenshot2](Demo_Picture_2.png)
 
 ---
 
